@@ -1,0 +1,15 @@
+This is project, moss-it, allows you to check for plagiarism/similarities in files by comparing them using 'moss'.
+Note: No files are stored on the server, files are deleted as soon as result from moss is delivered.
+
+Usage:
+
+- Click the 'browse' button to select the files to be added
+- To add more files click '+' sign
+- Click 'Compare files' after adding all the files to be compared for similarities
+- The result after the comparison would be dumped on the page, please visit the url included in result to view moss result
+
+
+
+
+
+moss-it Copyright (c) 2012 Pankaj Kumar

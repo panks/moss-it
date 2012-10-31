@@ -1,0 +1,14 @@
+.add_field,.remove_field{
+	background-color: #d3d3d3;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+	color: #0033ff;
+	font-size: 19px;
+	cursor: pointer;
+}
+
+.input_holder input{
+	display:block;
+}
