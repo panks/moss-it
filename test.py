@@ -8,7 +8,7 @@ print '\nfileList: '+filelist+'\n'
 
 code=(sys.argv[1]).split('/')
 print './moss -l java'+filelist+' > ./res/res'+code[2];
-tmp = os.system('perl ./moss -l'+sys.argv[2]+filelist+' > /home/content/17/9965417/html/moss/res/res'+code[2]+'.txt');
+tmp = os.system('perl ./moss -l'+sys.argv[2]+filelist+' > ./res/res'+code[2]+'.txt');
 print '\nDone\n';
 
 

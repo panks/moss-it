@@ -56,7 +56,7 @@ if (isset($_FILES['uploaded_files'])) {
     #echo " after sleep<br>";
     #include("/home/content/17/9965417/html/moss/uploadmultiplefiles/res/res".$foldername.".txt");
     echo "Running moss... <br><br>";
-    foreach (glob("/home/content/17/9965417/html/moss/res/res" . $foldername . ".txt") as $filename) {
+    foreach (glob("./res/res" . $foldername . ".txt") as $filename) {
         echo nl2br(file_get_contents($filename));
         echo "<br></br>";
     }
