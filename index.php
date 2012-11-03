@@ -28,7 +28,6 @@ if (isset($_FILES['uploaded_files'])) {
         }
     }
     
-    #	echo 'python test.py ./uploads/'.$foldername;
     
     $handles = array( // [1]
         0 => array(
@@ -45,16 +44,8 @@ if (isset($_FILES['uploaded_files'])) {
             "a"
         ) // stderr 
     );
-    #echo time();
-    #echo " started running<br>";
-    #$process = proc_open('python test.py ./uploads/'.$foldername, $handles, $pipes);
     $process = shell_exec('python test.py ./uploads/' . $foldername . ' ' . $lang);
-    #echo time();
-    #echo " command given<br>";
     sleep(5);
-    #echo time();
-    #echo " after sleep<br>";
-    #include("/home/content/17/9965417/html/moss/uploadmultiplefiles/res/res".$foldername.".txt");
     echo "Running moss... <br><br>";
     foreach (glob("./res/res" . $foldername . ".txt") as $filename) {
         echo nl2br(file_get_contents($filename));
